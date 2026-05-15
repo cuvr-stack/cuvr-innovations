@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #00ff6a;
+  --purple: #a855f7;
+  --bg: #080808;
+  --card: #0f0f0f;
+  --border: #1f1f1f;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: #fff;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #00ff6a33; border-radius: 2px; }
+
+/* Noise overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Grid utility */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(0,255,106,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,106,0.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Green underline accent */
+.accent-line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--green);
+  margin-top: 10px;
+}
+
+/* Neon text */
+.text-neon-green { color: var(--green); }
+.text-neon-purple { color: var(--purple); }
+
+/* Scanline effect */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.06) 3px, rgba(0,0,0,0.06) 6px
+  );
+  pointer-events: none;
+}
+
+/* Green gradient text */
+.text-gradient-green {
+  background: linear-gradient(135deg, #00ff6a 0%, #00cc55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-blink { animation: blink 1s step-end infinite; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fadeUp 0.6s ease forwards; }
