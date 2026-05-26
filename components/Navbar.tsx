@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Cuvr Rehab", href: "https://www.cuvr.ae" },
+  { label: "Cuvr Rehab", href: "https://rehab.cuvr.ae" },
   { label: "Cuvr Reality", href: "https://reality.cuvr.ae" },
   { label: "Technology", href: "#technology" },
   { label: "About", href: "#about" },

@@ -6,7 +6,7 @@ const cols = [
   {
     label: "DIRECTORY",
     links: [
-      { num: "01", text: "PhysioVR", href: "#physiovr" },
+      { num: "01", text: "PhysioVR", href: "https://rehab.cuvr.ae" },
       { num: "02", text: "Cuvr Reality", href: "https://reality.cuvr.ae" },
       { num: "03", text: "Tech Stack", href: "#technology" },
     ],
