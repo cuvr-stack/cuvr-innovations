@@ -22,7 +22,7 @@ const cards = [
 
 export default function WhyWorkAtCuvr() {
   return (
-    <section className="relative min-h-screen bg-[#080808] overflow-hidden flex flex-col justify-center py-24">
+    <section className="relative bg-[#080808] overflow-hidden py-20">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -36,9 +36,9 @@ export default function WhyWorkAtCuvr() {
             style={{ color: "#00ff6a" }}>
             PERSONNEL_ACQUISITION
           </p>
-          <h2 className="font-space font-bold text-white"
+          <h2 className="font-orbitron font-bold text-white"
             style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
-            WHY WORK AT CUVR
+            WHY WORK AT <span style={{ color: "#a855f7" }}>CUVR</span>
           </h2>
         </motion.div>
 
@@ -75,15 +75,15 @@ export default function WhyWorkAtCuvr() {
                   {card.title}
                 </h3>
 
-                <p className="font-inter text-sm leading-relaxed"
-                  style={{ color: "rgba(255,255,255,0.4)" }}>
+                <p className="font-inter leading-relaxed"
+                  style={{ color: "rgba(255,255,255,0.85)", fontSize: 15 }}>
                   <span dangerouslySetInnerHTML={{ __html: card.desc }} />
                 </p>
 
                 {/* Bottom accent on hover */}
                 <div
                   className="mt-6 w-6 h-[1px] group-hover:w-12 transition-all duration-500"
-                  style={{ background: "#00ff6a" }}
+                  style={{ background: card.icon === Users ? "#a855f7" : "#00ff6a" }}
                 />
               </motion.div>
             );

@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
 export default function EstablishLink() {
   const [form, setForm] = useState({ mac: "", corp: "", policy: "" });
 
   return (
-    <section className="relative min-h-screen bg-[#080808] overflow-hidden flex flex-col justify-center py-24">
+    <section className="relative bg-[#080808] overflow-hidden py-20">
       {/* Grid */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -45,20 +45,83 @@ export default function EstablishLink() {
               </span>
             </div>
 
-            <h2 className="font-space font-bold text-white leading-tight mb-6"
+            <h2 className="font-orbitron font-bold text-white leading-tight mb-6"
               style={{ fontSize: "clamp(2.2rem,4.5vw,3.5rem)" }}>
               Establish<br />
-              <em className="font-playfair italic not-italic"
-                style={{ fontStyle: "italic", color: "#00ff6a" }}>
-                Neural Link.
-              </em>
+              <span style={{ color: "#00ff6a" }}>Neural Link.</span>
             </h2>
 
-            <p className="font-inter text-sm leading-relaxed"
-              style={{ color: "rgba(255,255,255,0.4)", maxWidth: 340 }}>
+            <p className="font-inter leading-relaxed mb-10"
+              style={{ color: "rgba(255,255,255,0.9)", maxWidth: 340, fontSize: 16 }}>
               The protocol is ready. Synchronize your vision with our development suite and
               lead the next paradigm.
             </p>
+
+            {/* Contact details */}
+            <div className="space-y-5">
+              <a
+                href="mailto:info@cuvrinnovations.ae"
+                className="flex items-center gap-4 group"
+              >
+                <div
+                  className="flex items-center justify-center shrink-0"
+                  style={{
+                    width: 36, height: 36,
+                    background: "rgba(0,255,106,0.08)",
+                    border: "1px solid rgba(0,255,106,0.2)",
+                  }}
+                >
+                  <Mail size={14} color="#00ff6a" />
+                </div>
+                <div>
+                  <p className="font-mono text-[9px] tracking-[0.2em] uppercase mb-0.5" style={{ color: "rgba(255,255,255,0.45)" }}>Email</p>
+                  <p className="font-mono text-sm text-white/85 group-hover:text-[#00ff6a] transition-colors">
+                    info@cuvrinnovations.ae
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="tel:+971502592439"
+                className="flex items-center gap-4 group"
+              >
+                <div
+                  className="flex items-center justify-center shrink-0"
+                  style={{
+                    width: 36, height: 36,
+                    background: "rgba(0,255,106,0.08)",
+                    border: "1px solid rgba(0,255,106,0.2)",
+                  }}
+                >
+                  <Phone size={14} color="#00ff6a" />
+                </div>
+                <div>
+                  <p className="font-mono text-[9px] tracking-[0.2em] uppercase mb-0.5" style={{ color: "rgba(255,255,255,0.45)" }}>Phone</p>
+                  <p className="font-mono text-sm text-white/85 group-hover:text-[#00ff6a] transition-colors">
+                    +971 50 259 2439
+                  </p>
+                </div>
+              </a>
+
+              <div className="flex items-start gap-4">
+                <div
+                  className="flex items-center justify-center shrink-0 mt-0.5"
+                  style={{
+                    width: 36, height: 36,
+                    background: "rgba(0,255,106,0.08)",
+                    border: "1px solid rgba(0,255,106,0.2)",
+                  }}
+                >
+                  <MapPin size={14} color="#00ff6a" />
+                </div>
+                <div>
+                  <p className="font-mono text-[9px] tracking-[0.2em] uppercase mb-0.5" style={{ color: "rgba(255,255,255,0.45)" }}>Office</p>
+                  <p className="font-mono text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
+                    Dubai Silicon Oasis,<br />Dubai, UAE
+                  </p>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           {/* Right — form card */}
@@ -90,7 +153,7 @@ export default function EstablishLink() {
               {/* MAC_SECURITY */}
               <div>
                 <label className="font-mono uppercase block mb-2"
-                  style={{ fontSize: 9, letterSpacing: "0.2em", color: "rgba(255,255,255,0.3)" }}>
+                  style={{ fontSize: 10, letterSpacing: "0.2em", color: "rgba(255,255,255,0.65)" }}>
                   MAC_SECURITY
                 </label>
                 <input
@@ -108,7 +171,7 @@ export default function EstablishLink() {
               {/* CORP_LINK */}
               <div>
                 <label className="font-mono uppercase block mb-2"
-                  style={{ fontSize: 9, letterSpacing: "0.2em", color: "rgba(255,255,255,0.3)" }}>
+                  style={{ fontSize: 10, letterSpacing: "0.2em", color: "rgba(255,255,255,0.65)" }}>
                   CORP_LINK
                 </label>
                 <input
@@ -126,7 +189,7 @@ export default function EstablishLink() {
               {/* POLICY_PLEDGE */}
               <div>
                 <label className="font-mono uppercase block mb-2"
-                  style={{ fontSize: 9, letterSpacing: "0.2em", color: "rgba(255,255,255,0.3)" }}>
+                  style={{ fontSize: 10, letterSpacing: "0.2em", color: "rgba(255,255,255,0.65)" }}>
                   POLICY_PLEDGE
                 </label>
                 <input

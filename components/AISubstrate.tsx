@@ -20,7 +20,7 @@ export default function AISubstrate() {
   return (
     <section
       id="technology"
-      className="relative min-h-screen overflow-hidden flex flex-col justify-center py-24"
+      className="relative overflow-hidden py-20"
       style={{ background: "#080808" }}
     >
       {/* Keyframes */}
@@ -158,7 +158,7 @@ export default function AISubstrate() {
             </p>
 
             <h2
-              className="font-space font-bold text-white leading-tight mb-6"
+              className="font-orbitron font-bold text-white leading-tight mb-6"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
             >
               AI: The Core<br />Substrate.
@@ -168,7 +168,7 @@ export default function AISubstrate() {
               className="pl-5 mb-10"
               style={{ borderLeft: "2px solid rgba(0,255,106,0.4)" }}
             >
-              <p className="font-inter text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
+              <p className="font-inter text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.85)" }}>
                 Beyond rendering, CUVR systems are driven by a proprietary neural core that learns
                 from biometric feedback. We don&apos;t just output pixels; we simulate cognitive presence.
               </p>
@@ -200,11 +200,11 @@ export default function AISubstrate() {
                     <div>
                       <p
                         className="font-mono font-bold uppercase mb-1.5"
-                        style={{ fontSize: 10, letterSpacing: "0.2em", color: "rgba(255,255,255,0.6)" }}
+                        style={{ fontSize: 11, letterSpacing: "0.2em", color: "rgba(255,255,255,0.85)" }}
                       >
                         {f.label}
                       </p>
-                      <p className="font-inter text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.35)" }}>
+                      <p className="font-inter text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.75)" }}>
                         {f.desc}
                       </p>
                     </div>

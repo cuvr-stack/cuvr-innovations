@@ -30,7 +30,7 @@ const domains = [
 
 export default function ImmersiveDomains() {
   return (
-    <section id="physiovr" className="relative min-h-screen bg-[#080808] flex flex-col justify-center py-24">
+    <section id="physiovr" className="relative bg-[#080808] py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
@@ -42,7 +42,7 @@ export default function ImmersiveDomains() {
           <p className="font-mono text-[10px] tracking-[0.3em] text-white/30 uppercase mb-3" style={{color:"#a855f7"}}>
             Core Architectures
           </p>
-          <h2 className="font-space font-bold text-3xl md:text-4xl text-white">
+          <h2 className="font-orbitron font-bold text-3xl md:text-4xl text-white">
             Immersive Domains
           </h2>
           <span className="accent-line" />
@@ -118,13 +118,13 @@ export default function ImmersiveDomains() {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="font-space font-bold text-xl text-white">{d.title}</h3>
+                    <h3 className="font-orbitron font-bold text-xl text-white">{d.title}</h3>
                     <ArrowUpRight
                       size={16}
                       className="text-white/20 group-hover:text-white/60 transition-colors mt-0.5 shrink-0"
                     />
                   </div>
-                  <p className="font-inter text-sm text-white/40 leading-relaxed">
+                  <p className="font-inter text-white/85 leading-relaxed" style={{ fontSize: 15 }}>
                     {d.description}
                   </p>
                 </div>

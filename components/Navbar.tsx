@@ -2,10 +2,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Cuvr Rehab", href: "https://www.cuvr.ae" },
-  { label: "Cuvr Realtor", href: "#real-estate" },
+  { label: "Cuvr Reality", href: "https://reality.cuvr.ae" },
   { label: "Technology", href: "#technology" },
   { label: "About", href: "#about" },
 ];
@@ -31,15 +32,10 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          {/* Logo mark — two overlapping bars */}
-          <div className="flex flex-col gap-[3px]">
-            <div className="w-4 h-[2px] bg-[#00ff6a]" />
-            <div className="w-3 h-[2px] bg-[#00ff6a] opacity-60" />
-          </div>
-          <span className="font-space font-700 text-sm tracking-tight text-white">
-            CUVR<span className="text-[#00ff6a]">.</span>
-            <span className="text-white/50 text-xs">INNOVATION</span>
+        <a href="/" className="flex items-center gap-2 group">
+          <Image src="/cuvr.png" alt="CUVR Logo" width={40} height={40} style={{ objectFit: "contain" }} />
+          <span className="font-orbitron font-bold text-lg tracking-tight text-white">
+            CUVR<span className="text-[#00ff6a]">.</span><span className="text-[#00ff6a]">INNOVATION</span>
           </span>
         </a>
 
@@ -49,9 +45,10 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="font-inter text-xs text-white/50 hover:text-white transition-colors tracking-wide"
-              target={link.href.startsWith('http') ? '_blank' : undefined}
-              rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              className="font-orbitron font-bold text-white/75 hover:text-[#00ff6a] transition-colors uppercase"
+              style={{ fontSize: 11, letterSpacing: "0.08em" }}
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
             >
               {link.label}
             </a>
@@ -60,8 +57,8 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <button className="font-mono text-[11px] tracking-widest text-white border border-white/30 hover:border-white hover:bg-white/5 px-5 py-2 transition-all duration-300 uppercase">
-            CONNECT_NODE
+          <button className="font-mono text-[11px] tracking-widest text-white px-5 py-2 transition-all duration-300 uppercase" style={{ background: "#a855f7" }} onMouseEnter={e => (e.currentTarget.style.background = "#9333ea")} onMouseLeave={e => (e.currentTarget.style.background = "#a855f7")}>
+            CONNECT_US
           </button>
         </div>
 
@@ -85,15 +82,16 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="font-inter text-sm text-white/50 hover:text-white border-b border-white/5 pb-3"
-                  target={link.href.startsWith('http') ? '_blank' : undefined}
-                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="font-orbitron font-bold text-white/75 hover:text-[#00ff6a] border-b border-white/5 pb-3 uppercase"
+                  style={{ fontSize: 12, letterSpacing: "0.08em" }}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 >
                   {link.label}
                 </a>
               ))}
-              <button className="font-mono text-[11px] tracking-widest text-white border border-white/30 px-5 py-2.5 uppercase mt-1">
-                CONNECT_NODE
+              <button className="font-mono text-[11px] tracking-widest text-white px-5 py-2.5 uppercase mt-1" style={{ background: "#a855f7" }}>
+                CONNECT_US
               </button>
             </div>
           </motion.div>

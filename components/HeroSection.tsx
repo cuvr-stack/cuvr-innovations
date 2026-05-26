@@ -49,7 +49,7 @@ export default function HeroSection() {
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className="font-space font-bold leading-none tracking-tight text-white"
+            className="font-orbitron font-bold leading-none tracking-tight text-white"
             style={{ fontSize: "clamp(2.8rem, 6vw, 5rem)" }}
           >
             RECODE
@@ -62,7 +62,7 @@ export default function HeroSection() {
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="font-space font-bold leading-none tracking-tight italic"
+            className="font-orbitron font-bold leading-none tracking-tight"
             style={{ fontSize: "clamp(2.8rem, 6vw, 5rem)", color: "#00ff6a" }}
           >
             REALITY.
@@ -74,7 +74,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.42 }}
-          className="font-inter text-sm text-white/55 max-w-xs leading-relaxed mb-8"
+          className="font-inter text-base text-white/90 max-w-sm leading-relaxed mb-8"
         >
           Architecting the next epoch of human experience. CUVR leverages
           neural-link precision and spatial compute to dissolve the barrier
@@ -88,13 +88,13 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.52 }}
           className="flex flex-wrap items-center gap-3"
         >
-          <button className="group relative flex items-center gap-2.5 font-mono text-[10px] font-bold tracking-widest text-[#080808] bg-[#00ff6a] hover:bg-[#00dd5a] px-6 py-3 uppercase transition-colors duration-300 shadow-green-sm overflow-hidden">
+          <button className="group relative flex items-center gap-2.5 font-mono text-xs font-bold tracking-widest text-[#080808] bg-[#00ff6a] hover:bg-[#00dd5a] px-6 py-3 uppercase transition-colors duration-300 shadow-green-sm overflow-hidden">
             <span className="relative z-10">Access Interface</span>
-            <ArrowRight size={12} className="relative z-10 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight size={13} className="relative z-10 group-hover:translate-x-1 transition-transform" />
             <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12" />
           </button>
 
-          <button className="flex items-center gap-2.5 font-mono text-[10px] tracking-widest px-6 py-3 uppercase transition-all duration-300"
+          <button className="flex items-center gap-2.5 font-mono text-xs tracking-widest px-6 py-3 uppercase transition-all duration-300"
             style={{ color: "#a855f7", border: "1px solid #a855f7" }}
             onMouseEnter={e => { e.currentTarget.style.background = "rgba(168,85,247,0.08)"; }}
             onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}>

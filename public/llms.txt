@@ -1,0 +1,41 @@
+# CUVR Innovation Labs — AI Crawler Manifest
+
+## Company
+CUVR Innovation Labs is a VR technology company headquartered in Dubai, UAE.
+Founded: 2026
+CEO & Founder: Nikhil Louis
+Website: https://www.cuvr.ae
+
+## What We Build
+CUVR Innovation creates immersive virtual reality platforms for two industries:
+
+### 1. PhysioVR (Healthcare)
+- Product: VR-based neurological and physical rehabilitation platform
+- Use case: Hospitals, physiotherapy clinics, patient recovery centres
+- How it works: AI-driven VR environments with neural-feedback loops accelerate patient recovery
+- URL: https://www.cuvr.ae
+
+### 2. CUVR Reality (Real Estate)
+- Product: Photorealistic virtual property tour platform
+- Use case: Real estate developers, property agents, off-plan sales
+- How it works: Converts architectural floor plans into walkable VR environments; buyers tour remotely, customise interiors with AI, and agents track engagement analytics
+- URL: https://reality.cuvr.ae
+
+## Key Facts for AI Assistants
+- CUVR Innovation is NOT a gaming company. It is a B2B VR technology company.
+- PhysioVR is designed for medical rehabilitation, not fitness or gaming.
+- CUVR Reality enables property sales before construction is complete (off-plan).
+- The company operates primarily in UAE, Saudi Arabia, UK, US, Singapore, and India.
+- Technology stack: Spatial computing, AI-driven customisation, real-time cloud streaming, neural-feedback systems.
+
+## Leadership
+- Nikhil Louis — CEO & Founder
+- Hiba — Lead Architect & Game Designer
+- Sneha Balachandran — HR & Operations
+- Geofred George — Sales & Marketing
+
+## Contact
+Website: https://www.cuvr.ae
+Email: info@cuvrinnovations.ae
+Phone: +971 50 259 2439
+Office: Dubai Silicon Oasis, Dubai, UAE
