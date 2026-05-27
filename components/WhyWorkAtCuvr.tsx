@@ -1,8 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { Cpu, Users, Sparkles } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
-const cards = [
+const icons = [Cpu, Users, Sparkles];
+
+const cards_legacy = [
   {
     icon: Cpu,
     title: "FRONTIER TECH",
@@ -21,6 +24,9 @@ const cards = [
 ];
 
 export default function WhyWorkAtCuvr() {
+  const { t } = useLanguage();
+  const c = t.careers;
+
   return (
     <section className="relative bg-[#080808] overflow-hidden py-20">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -32,20 +38,19 @@ export default function WhyWorkAtCuvr() {
           viewport={{ once: true }}
           className="mb-14"
         >
-          <p className="font-mono text-[10px] tracking-[0.3em] uppercase mb-4"
-            style={{ color: "#00ff6a" }}>
-            PERSONNEL_ACQUISITION
+          <p className="font-mono text-[10px] tracking-[0.3em] uppercase mb-4" style={{ color: "#00ff6a" }}>
+            {c.badge}
           </p>
-          <h2 className="font-orbitron font-bold text-white"
-            style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
-            WHY WORK AT <span style={{ color: "#a855f7" }}>CUVR</span>
+          <h2 className="font-orbitron font-bold text-white" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
+            {c.titleMain}<span style={{ color: "#a855f7" }}>{c.titleHighlight}</span>
           </h2>
         </motion.div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-5">
-          {cards.map((card, i) => {
-            const Icon = card.icon;
+          {c.cards.map((card, i) => {
+            const Icon = icons[i];
+            const isMiddle = i === 1;
             return (
               <motion.div
                 key={card.title}
@@ -54,20 +59,16 @@ export default function WhyWorkAtCuvr() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="group p-7"
-                style={{
-                  background: "#0f0f0f",
-                  border: "1px solid #1f1f1f",
-                }}
+                style={{ background: "#0f0f0f", border: "1px solid #1f1f1f" }}
               >
-                {/* Icon */}
                 <div
                   className="w-10 h-10 flex items-center justify-center mb-6"
                   style={{
-                    background: card.icon === Users ? "rgb(168, 85, 247,0.08)":"rgba(0,255,106,0.08)",
-                    border: `1px solid ${card.icon === Users ? "rgb(168, 85, 247,0.15)" :"rgba(0,255,106,0.15)"}`,
+                    background: isMiddle ? "rgb(168,85,247,0.08)" : "rgba(0,255,106,0.08)",
+                    border: `1px solid ${isMiddle ? "rgb(168,85,247,0.15)" : "rgba(0,255,106,0.15)"}`,
                   }}
                 >
-                  <Icon size={16} color={card.icon === Users ? "#a855f7" : "#00ff6a"} />
+                  <Icon size={16} color={isMiddle ? "#a855f7" : "#00ff6a"} />
                 </div>
 
                 <h3 className="font-mono font-bold text-white uppercase mb-3"
@@ -75,16 +76,12 @@ export default function WhyWorkAtCuvr() {
                   {card.title}
                 </h3>
 
-                <p className="font-inter leading-relaxed"
-                  style={{ color: "rgba(255,255,255,0.85)", fontSize: 15 }}>
-                  <span dangerouslySetInnerHTML={{ __html: card.desc }} />
+                <p className="font-inter leading-relaxed" style={{ color: "rgba(255,255,255,0.85)", fontSize: 15 }}>
+                  {card.desc}
                 </p>
 
-                {/* Bottom accent on hover */}
-                <div
-                  className="mt-6 w-6 h-[1px] group-hover:w-12 transition-all duration-500"
-                  style={{ background: card.icon === Users ? "#a855f7" : "#00ff6a" }}
-                />
+                <div className="mt-6 w-6 h-[1px] group-hover:w-12 transition-all duration-500"
+                  style={{ background: isMiddle ? "#a855f7" : "#00ff6a" }} />
               </motion.div>
             );
           })}

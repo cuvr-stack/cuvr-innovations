@@ -1,37 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
-
-const cols = [
-  {
-    label: "DIRECTORY",
-    links: [
-      { num: "01", text: "PhysioVR", href: "https://rehab.cuvr.ae" },
-      { num: "02", text: "Cuvr Reality", href: "https://reality.cuvr.ae" },
-      { num: "03", text: "Tech Stack", href: "#technology" },
-    ],
-    numbered: true,
-  },
-  {
-    label: "NODE",
-    links: [
-      { text: "About Us", href: "#about" },
-      { text: "Careers", href: "#" },
-      { text: "Contact", href: "#" },
-      { text: "FAQs", href: "#faqs" },
-    ],
-    numbered: false,
-  },
-  {
-    label: "LEGAL",
-    links: [
-      { text: "Terms & Conditions", href: "/terms" },
-      { text: "Privacy Policy", href: "/privacy" },
-      { text: "Sitemap", href: "/sitemap.xml" },
-    ],
-    numbered: false,
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 const socials = [
   { icon: Linkedin,  href: "#", label: "LinkedIn" },
@@ -41,6 +11,15 @@ const socials = [
 ];
 
 export default function Footer() {
+  const { t } = useLanguage();
+  const f = t.footer;
+
+  const cols = [
+    { label: f.colDirectory, links: f.links.directory, numbered: true },
+    { label: f.colNode,      links: f.links.node,      numbered: false },
+    { label: f.colLegal,     links: f.links.legal,     numbered: false },
+  ];
+
   return (
     <footer className="bg-[#080808] border-t border-[#141414]">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -55,41 +34,27 @@ export default function Footer() {
               </span>
             </a>
             <p className="font-inter text-xs text-white/70 leading-relaxed mb-5 max-w-[200px]">
-              © 2026 CUVR Innovation Labs. All Rights Reserved.
+              {f.copyright}
             </p>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00ff6a] animate-pulse" />
               <span className="font-mono text-[9px] tracking-widest text-[#00ff6a]/60 uppercase">
-                Global OPN Active
+                {f.status}
               </span>
             </div>
 
             {/* Follow Us */}
             <div>
               <h4 className="font-mono text-[9px] tracking-[0.25em] text-white/60 uppercase mb-4">
-                FOLLOW_US
+                {f.colFollow}
               </h4>
               <div className="flex items-center gap-3">
                 {socials.map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    aria-label={label}
+                  <a key={label} href={href} aria-label={label}
                     className="flex items-center justify-center transition-all duration-300 group"
-                    style={{
-                      width: 32,
-                      height: 32,
-                      border: "1px solid #2a2a2a",
-                      background: "transparent",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = "rgba(0,255,106,0.4)";
-                      e.currentTarget.style.background = "rgba(0,255,106,0.06)";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = "#2a2a2a";
-                      e.currentTarget.style.background = "transparent";
-                    }}
+                    style={{ width: 32, height: 32, border: "1px solid #2a2a2a", background: "transparent" }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(0,255,106,0.4)"; e.currentTarget.style.background = "rgba(0,255,106,0.06)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#2a2a2a"; e.currentTarget.style.background = "transparent"; }}
                   >
                     <Icon size={13} className="text-white/50 group-hover:text-[#00ff6a] transition-colors" />
                   </a>

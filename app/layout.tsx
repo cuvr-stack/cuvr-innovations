@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Space_Mono, Inter, Playfair_Display, Orbitron } from "next/font/google";
+import { Space_Grotesk, Space_Mono, Inter, Playfair_Display, Orbitron, Cairo } from "next/font/google";
+import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -36,6 +37,13 @@ const orbitron = Orbitron({
   weight: ["700", "800", "900"],
   display: "swap",
   variable: "--font-orbitron",
+});
+
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-cairo",
 });
 
 const BASE_URL = "https://www.cuvr.ae";
@@ -139,7 +147,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${spaceMono.variable} ${inter.variable} ${playfair.variable} ${orbitron.variable}`}
+      className={`${spaceGrotesk.variable} ${spaceMono.variable} ${inter.variable} ${playfair.variable} ${orbitron.variable} ${cairo.variable}`}
     >
       <head>
         {/* Geo tags — AEO/GEO for UAE */}
@@ -160,7 +168,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/cuvr.png" type="image/png" />
         <link rel="apple-touch-icon" href="/cuvr.png" />
       </head>
-      <body className="bg-[#080808] text-white antialiased">{children}</body>
+      <body className="bg-[#080808] text-white antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

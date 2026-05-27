@@ -3,17 +3,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-
-const navLinks = [
-  { label: "Cuvr Rehab", href: "https://rehab.cuvr.ae" },
-  { label: "Cuvr Reality", href: "https://reality.cuvr.ae" },
-  { label: "Technology", href: "#technology" },
-  { label: "About", href: "#about" },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { t, lang, toggleLang } = useLanguage();
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 20);
@@ -41,9 +36,9 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {t.nav.links.map((link) => (
             <a
-              key={link.label}
+              key={link.href}
               href={link.href}
               className="font-orbitron font-bold text-white/75 hover:text-[#00ff6a] transition-colors uppercase"
               style={{ fontSize: 11, letterSpacing: "0.08em" }}
@@ -55,10 +50,30 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="hidden md:block">
-          <button className="font-mono text-[11px] tracking-widest text-white px-5 py-2 transition-all duration-300 uppercase" style={{ background: "#a855f7" }} onMouseEnter={e => (e.currentTarget.style.background = "#9333ea")} onMouseLeave={e => (e.currentTarget.style.background = "#a855f7")}>
-            CONNECT_US
+        {/* Right side — lang toggle + CTA */}
+        <div className="hidden md:flex items-center gap-3">
+          {/* Language toggle */}
+          <button
+            onClick={toggleLang}
+            className="font-mono text-[10px] tracking-widest uppercase transition-all duration-300 px-3 py-2 border"
+            style={{
+              color: "#00ff6a",
+              borderColor: "rgba(0,255,106,0.3)",
+              background: "rgba(0,255,106,0.05)",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(0,255,106,0.12)")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(0,255,106,0.05)")}
+          >
+            {lang === "en" ? "عربي" : "EN"}
+          </button>
+
+          <button
+            className="font-mono text-[11px] tracking-widest text-white px-5 py-2 transition-all duration-300 uppercase"
+            style={{ background: "#a855f7" }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "#9333ea")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "#a855f7")}
+          >
+            {t.nav.cta}
           </button>
         </div>
 
@@ -77,9 +92,9 @@ export default function Navbar() {
             className="md:hidden bg-[#080808]/98 border-b border-white/5"
           >
             <div className="px-6 py-5 flex flex-col gap-4">
-              {navLinks.map((link) => (
+              {t.nav.links.map((link) => (
                 <a
-                  key={link.label}
+                  key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className="font-orbitron font-bold text-white/75 hover:text-[#00ff6a] border-b border-white/5 pb-3 uppercase"
@@ -90,9 +105,18 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <button className="font-mono text-[11px] tracking-widest text-white px-5 py-2.5 uppercase mt-1" style={{ background: "#a855f7" }}>
-                CONNECT_US
-              </button>
+              <div className="flex gap-3 mt-1">
+                <button
+                  onClick={toggleLang}
+                  className="font-mono text-[10px] tracking-widest uppercase px-4 py-2.5 border"
+                  style={{ color: "#00ff6a", borderColor: "rgba(0,255,106,0.3)", background: "rgba(0,255,106,0.05)" }}
+                >
+                  {lang === "en" ? "عربي" : "EN"}
+                </button>
+                <button className="flex-1 font-mono text-[11px] tracking-widest text-white px-5 py-2.5 uppercase" style={{ background: "#a855f7" }}>
+                  {t.nav.cta}
+                </button>
+              </div>
             </div>
           </motion.div>
         )}

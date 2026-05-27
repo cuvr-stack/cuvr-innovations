@@ -47,6 +47,7 @@ const config: Config = {
         inter: ["var(--font-inter)", "sans-serif"],
         playfair: ["var(--font-playfair)", "serif"],
         orbitron: ["var(--font-orbitron)", "sans-serif"],
+        cairo:    ["var(--font-cairo)", "sans-serif"],
       },
       animation: {
         "pulse-slow": "pulse 3s cubic-bezier(0.4,0,0.6,1) infinite",
