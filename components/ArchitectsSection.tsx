@@ -112,7 +112,7 @@ export default function ArchitectsSection() {
           </h2>
         </motion.div>
 
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-6">
           {a.team.map((member, i) => (
             <TeamCard key={member.name} meta={teamMeta[i]} member={member} index={i} />
           ))}
