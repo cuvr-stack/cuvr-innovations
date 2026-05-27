@@ -56,14 +56,14 @@ export default function HowItWorks() {
                 className="relative"
                 style={{ background: "#0d0d0d", border: "1px solid #1f1f1f", padding: 32 }}
               >
-                {/* Corner bracket — top left */}
-                <div className="absolute top-4 left-4 pointer-events-none">
+                {/* Corner bracket — top start */}
+                <div className="absolute top-4 start-4 pointer-events-none">
                   <div style={{ width: 20, height: 2, background: tagColor }} />
                   <div style={{ width: 2, height: 20, background: tagColor }} />
                 </div>
 
-                {/* Corner bracket — bottom right */}
-                <div className="absolute bottom-4 right-4 pointer-events-none flex flex-col items-end">
+                {/* Corner bracket — bottom end */}
+                <div className="absolute bottom-4 end-4 pointer-events-none flex flex-col items-end">
                   <div style={{ width: 2, height: 20, background: tagColor }} />
                   <div style={{ width: 20, height: 2, background: tagColor }} />
                 </div>

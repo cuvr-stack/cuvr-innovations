@@ -58,7 +58,7 @@ function TeamCard({ meta, member, index }: {
         <div className="absolute inset-0 pointer-events-none"
           style={{ backgroundImage: "repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.06) 3px,rgba(0,0,0,0.06) 6px)" }} />
 
-        <div className="absolute top-3 left-3 z-10">
+        <div className="absolute top-3 start-3 z-10">
           <span className="font-mono"
             style={{ fontSize: 9, letterSpacing: "0.2em", color: meta.tagColor,
               border: `1px solid ${meta.tagColor}40`, padding: "2px 8px", background: "rgba(0,0,0,0.7)" }}>

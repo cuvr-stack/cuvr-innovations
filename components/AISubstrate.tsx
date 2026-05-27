@@ -52,11 +52,11 @@ export default function AISubstrate() {
             className="relative"
             style={{ background: "#0b0b14", border: "1px solid #1f1f1f", padding: 20 }}
           >
-            <div className="absolute top-4 left-4 z-20 pointer-events-none">
+            <div className="absolute top-4 start-4 z-20 pointer-events-none">
               <div style={{ width: 28, height: 2, background: "#00ff6a" }} />
               <div style={{ width: 2, height: 28, background: "#00ff6a" }} />
             </div>
-            <div className="absolute bottom-4 right-4 z-20 pointer-events-none flex flex-col items-end">
+            <div className="absolute bottom-4 end-4 z-20 pointer-events-none flex flex-col items-end">
               <div style={{ width: 2, height: 28, background: "#a855f7" }} />
               <div style={{ width: 28, height: 2, background: "#a855f7" }} />
             </div>
