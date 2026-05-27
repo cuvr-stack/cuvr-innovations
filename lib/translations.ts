@@ -190,7 +190,7 @@ const translations = {
       colFollow:    "FOLLOW_US",
       links: {
         directory: [
-          { num: "01", text: "PhysioVR",     href: "https://rehab.cuvr.ae" },
+          { num: "01", text: "Cuvr Rehab",    href: "https://rehab.cuvr.ae" },
           { num: "02", text: "Cuvr Reality", href: "https://reality.cuvr.ae" },
           { num: "03", text: "Tech Stack",   href: "#technology" },
         ],
