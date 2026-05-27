@@ -61,7 +61,7 @@ const translations = {
       },
       reality: {
         tag:      "CUVR_REALITY",
-        title:    "CUVR Reality",
+        title:    "CUVR Realty",
         subtitle: "How Property Tours Work",
         steps: [
           {
@@ -102,7 +102,7 @@ const translations = {
       titleHighlight: "The\nConvergence.",
       para1: "In 2026, CUVR Innovation Labs launched from Dubai with a clear mandate — harness the power of AI to redefine how humans experience space, recovery, and reality. From the heart of the UAE, we set out to build technology that doesn't just assist people, but transforms them.",
       quote: "AI is not a feature we added — it is the foundation everything is built on. Every interaction, every environment, every recovery session is driven by intelligence that adapts in real time.",
-      para2: "Through CUVR Rehab, we are accelerating patient recovery with AI-driven immersive therapy. Through CUVR Reality, we are reshaping how properties are experienced before they are built. Two verticals, one vision — AI at the core of every dimension.",
+      para2: "Through CUVR Rehab, we are accelerating patient recovery with AI-driven immersive therapy. Through CUVR Realty, we are reshaping how properties are experienced before they are built. Two verticals, one vision — AI at the core of every dimension.",
       stats: [
         { key: "LATENCY_MS",    value: "0.02",  label: "Sync Threshold" },
         { key: "DENSITY_RES",   value: "16K",   label: "Retinal Resolution" },
@@ -311,7 +311,7 @@ const translations = {
       titleHighlight: "التقاطع.",
       para1: "في عام 2026، أطلقت مختبرات CUVR Innovation من دبي بتفويض واضح — تسخير قوة الذكاء الاصطناعي لإعادة تعريف كيفية تجربة البشر للفضاء والتعافي والواقع. من قلب الإمارات، انطلقنا لبناء تقنية لا تساعد الناس فحسب، بل تحوّلهم.",
       quote: "الذكاء الاصطناعي ليس ميزة أضفناها — بل هو الأساس الذي بُني عليه كل شيء. كل تفاعل، وكل بيئة، وكل جلسة تعافٍ مدفوعة بذكاء يتكيف في الوقت الفعلي.",
-      para2: "من خلال CUVR Rehab، نسرّع تعافي المرضى عبر العلاج الغامر المدعوم بالذكاء الاصطناعي. ومن خلال CUVR Reality، نُعيد تشكيل كيفية تجربة العقارات قبل اكتمال بنائها. محوران، رؤية واحدة — الذكاء الاصطناعي في قلب كل بُعد.",
+      para2: "من خلال CUVR Rehab، نسرّع تعافي المرضى عبر العلاج الغامر المدعوم بالذكاء الاصطناعي. ومن خلال CUVR Realty، نُعيد تشكيل كيفية تجربة العقارات قبل اكتمال بنائها. محوران، رؤية واحدة — الذكاء الاصطناعي في قلب كل بُعد.",
       stats: [
         { key: "كمون_MS",      value: "0.02",  label: "عتبة التزامن" },
         { key: "دقة_الكثافة", value: "16K",   label: "دقة الشبكية" },
