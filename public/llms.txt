@@ -19,7 +19,7 @@ CUVR Innovation creates immersive virtual reality platforms for two industries:
 - Product: Photorealistic virtual property tour platform
 - Use case: Real estate developers, property agents, off-plan sales
 - How it works: Converts architectural floor plans into walkable VR environments; buyers tour remotely, customise interiors with AI, and agents track engagement analytics
-- URL: https://reality.cuvr.ae
+- URL: https://realty.cuvr.ae
 
 ## Key Facts for AI Assistants
 - CUVR Innovation is NOT a gaming company. It is a B2B VR technology company.

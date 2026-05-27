@@ -35,7 +35,7 @@ export default function StructuredData() {
     ],
     sameAs: [
       "https://www.cuvr.ae",
-      "https://reality.cuvr.ae",
+      "https://realty.cuvr.ae",
     ],
     member: [
       {
@@ -105,7 +105,7 @@ export default function StructuredData() {
     description:
       "CUVR Realty delivers photorealistic virtual property tours for real estate developers and agents, enabling remote buyers to experience unbuilt properties in full VR fidelity.",
     provider: { "@id": "https://innovation.cuvr.ae/#organization" },
-    url: "https://reality.cuvr.ae",
+    url: "https://realty.cuvr.ae",
     featureList: [
       "Photorealistic VR property tours",
       "AI-driven interior customisation",

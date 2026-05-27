@@ -5,7 +5,7 @@ const translations = {
     nav: {
       links: [
         { label: "Cuvr Rehab",    href: "https://rehab.cuvr.ae" },
-        { label: "Cuvr Realty",  href: "https://reality.cuvr.ae" },
+        { label: "Cuvr Realty",  href: "https://realty.cuvr.ae" },
         { label: "Technology",    href: "#technology" },
         { label: "About",         href: "#about" },
       ],
@@ -191,7 +191,7 @@ const translations = {
       links: {
         directory: [
           { num: "01", text: "Cuvr Rehab",    href: "https://rehab.cuvr.ae" },
-          { num: "02", text: "Cuvr Realty", href: "https://reality.cuvr.ae" },
+          { num: "02", text: "Cuvr Realty", href: "https://realty.cuvr.ae" },
           { num: "03", text: "Tech Stack",   href: "#technology" },
         ],
         node: [
@@ -214,7 +214,7 @@ const translations = {
     nav: {
       links: [
         { label: "كيوفر ريهاب",    href: "https://rehab.cuvr.ae" },
-        { label: "كيوفر ريالتي",   href: "https://reality.cuvr.ae" },
+        { label: "كيوفر ريالتي",   href: "https://realty.cuvr.ae" },
         { label: "التقنية",         href: "#technology" },
         { label: "من نحن",          href: "#about" },
       ],
@@ -400,7 +400,7 @@ const translations = {
       links: {
         directory: [
           { num: "01", text: "فيزيو في آر",   href: "https://rehab.cuvr.ae" },
-          { num: "02", text: "كيوفر ريالتي",  href: "https://reality.cuvr.ae" },
+          { num: "02", text: "كيوفر ريالتي",  href: "https://realty.cuvr.ae" },
           { num: "03", text: "التقنيات",       href: "#technology" },
         ],
         node: [
