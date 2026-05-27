@@ -96,7 +96,18 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    if (link.href.startsWith("#")) {
+                      e.preventDefault();
+                      setOpen(false);
+                      const id = link.href.slice(1);
+                      setTimeout(() => {
+                        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+                      }, 320);
+                    } else {
+                      setOpen(false);
+                    }
+                  }}
                   className="font-orbitron font-bold text-white/75 hover:text-[#00ff6a] border-b border-white/5 pb-3 uppercase"
                   style={{ fontSize: 12, letterSpacing: "0.08em" }}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
