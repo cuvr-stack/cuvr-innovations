@@ -6,7 +6,7 @@ import { useLanguage } from "@/context/LanguageContext";
 const teamMeta = [
   { photo: "/nikhil_web.png", photoHover: "/nikhil_colour.png", tagColor: "#00ff6a", initials: "" },
   { photo: "/hiba.png",       photoHover: "/hiba_colour.png",   tagColor: "#a855f7", initials: "H" },
-  { photo: null,              photoHover: null,                  tagColor: "#00e5ff", initials: "SB" },
+  { photo: "/sneha.png",      photoHover: "/sneha_colour.png",   tagColor: "#00e5ff", initials: "SB" },
   { photo: "/geofred.png",   photoHover: "/geofred_colour.png", tagColor: "#fbbf24", initials: "GG" },
 ];
 

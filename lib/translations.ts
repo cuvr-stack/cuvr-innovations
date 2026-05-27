@@ -143,7 +143,7 @@ const translations = {
           desc:  "Visionary behind CUVR Innovation, pioneering the convergence of VR technology, neural computing, and real-world human experience.",
         },
         {
-          name:  "Hiba",
+          name:  "Hiba Moonnakkal",
           title: "Lead Architect & Game Designer",
           tag:   "ARCHITECT",
           desc:  "Crafting immersive architectural and game environments that dissolve the boundary between digital simulation and physical reality.",
@@ -352,7 +352,7 @@ const translations = {
           desc:  "الرؤية الإبداعية وراء CUVR Innovation، يقود التقاء تقنية الواقع الافتراضي والحوسبة العصبية والتجربة الإنسانية الواقعية.",
         },
         {
-          name:  "هبة",
+          name:  "هبة موناكال",
           title: "المهندسة المعمارية الرئيسية ومصممة الألعاب",
           tag:   "ARCHITECT",
           desc:  "تصميم بيئات معمارية وألعاب غامرة تُذيب الحدود بين المحاكاة الرقمية والواقع المادي.",
