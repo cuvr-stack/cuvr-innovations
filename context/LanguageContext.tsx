@@ -2,18 +2,20 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import translations, { Lang } from "@/lib/translations";
 
+type Translations = typeof translations[Lang];
+
 interface LanguageContextType {
   lang: Lang;
   toggleLang: () => void;
   isAr: boolean;
-  t: typeof translations["en"];
+  t: Translations;
 }
 
 const LanguageContext = createContext<LanguageContextType>({
   lang: "en",
   toggleLang: () => {},
   isAr: false,
-  t: translations.en,
+  t: translations.en as Translations,
 });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
