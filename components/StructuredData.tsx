@@ -13,7 +13,7 @@ export default function StructuredData() {
       height: 512,
     },
     description:
-      "CUVR Innovation Labs builds immersive VR platforms for real estate sales and neurological rehabilitation. Our products include PhysioVR for patient recovery and CUVR Reality for virtual property tours.",
+      "CUVR Innovation Labs builds immersive VR platforms for real estate sales and neurological rehabilitation. Our products include PhysioVR for patient recovery and CUVR Realty for virtual property tours.",
     foundingDate: "2021",
     foundingLocation: {
       "@type": "Place",
@@ -99,11 +99,11 @@ export default function StructuredData() {
   const softwareReality = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "CUVR Reality",
+    name: "CUVR Realty",
     applicationCategory: "BusinessApplication",
     operatingSystem: "VR Headset, Browser, Mobile, Tablet",
     description:
-      "CUVR Reality delivers photorealistic virtual property tours for real estate developers and agents, enabling remote buyers to experience unbuilt properties in full VR fidelity.",
+      "CUVR Realty delivers photorealistic virtual property tours for real estate developers and agents, enabling remote buyers to experience unbuilt properties in full VR fidelity.",
     provider: { "@id": "https://innovation.cuvr.ae/#organization" },
     url: "https://reality.cuvr.ae",
     featureList: [
@@ -124,7 +124,7 @@ export default function StructuredData() {
         name: "What does CUVR Innovation do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CUVR Innovation Labs builds immersive VR platforms for two industries: real estate (CUVR Reality — virtual property tours) and healthcare (PhysioVR — neurological rehabilitation). The company is based in the UAE and serves clients globally.",
+          text: "CUVR Innovation Labs builds immersive VR platforms for two industries: real estate (CUVR Realty — virtual property tours) and healthcare (PhysioVR — neurological rehabilitation). The company is based in the UAE and serves clients globally.",
         },
       },
       {
@@ -137,10 +137,10 @@ export default function StructuredData() {
       },
       {
         "@type": "Question",
-        name: "What is CUVR Reality?",
+        name: "What is CUVR Realty?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CUVR Reality is a virtual real estate platform that allows property developers and agents to offer photorealistic VR tours of unbuilt or off-plan properties. Buyers can walk through, customise interiors, and experience the space from anywhere in the world.",
+          text: "CUVR Realty is a virtual real estate platform that allows property developers and agents to offer photorealistic VR tours of unbuilt or off-plan properties. Buyers can walk through, customise interiors, and experience the space from anywhere in the world.",
         },
       },
       {
@@ -156,7 +156,7 @@ export default function StructuredData() {
         name: "How does CUVR's VR real estate platform work?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CUVR Reality converts architectural floor plans and CAD files into photorealistic VR environments. Buyers can tour properties remotely on any device, swap materials and finishes in real time using AI, and agents receive engagement analytics showing buyer behaviour inside the virtual space.",
+          text: "CUVR Realty converts architectural floor plans and CAD files into photorealistic VR environments. Buyers can tour properties remotely on any device, swap materials and finishes in real time using AI, and agents receive engagement analytics showing buyer behaviour inside the virtual space.",
         },
       },
       {

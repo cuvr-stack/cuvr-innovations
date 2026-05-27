@@ -23,7 +23,7 @@ export default function HomePage() {
         </section>
 
         {/* Products */}
-        <section aria-label="CUVR Products — PhysioVR and CUVR Reality">
+        <section aria-label="CUVR Products — PhysioVR and CUVR Realty">
           <ImmersiveDomains />
         </section>
 

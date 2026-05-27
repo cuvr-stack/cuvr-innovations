@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     template: "%s | CUVR Innovation",
   },
   description:
-    "CUVR Innovation builds immersive VR platforms for real estate sales and neurological rehabilitation. PhysioVR accelerates patient recovery. CUVR Reality delivers photorealistic virtual property tours. Based in the UAE.",
+    "CUVR Innovation builds immersive VR platforms for real estate sales and neurological rehabilitation. PhysioVR accelerates patient recovery. CUVR Realty delivers photorealistic virtual property tours. Based in the UAE.",
   keywords: [
     "VR real estate UAE",
     "virtual reality property tours Dubai",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     siteName: "CUVR Innovation",
     title: "CUVR Innovation — VR Technology for Real Estate & Healthcare",
     description:
-      "Immersive VR platforms for real estate sales and neurological rehabilitation. PhysioVR and CUVR Reality — built in the UAE, deployed globally.",
+      "Immersive VR platforms for real estate sales and neurological rehabilitation. PhysioVR and CUVR Realty — built in the UAE, deployed globally.",
     images: [
       {
         url: "/og-image.png",

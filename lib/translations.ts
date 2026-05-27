@@ -5,7 +5,7 @@ const translations = {
     nav: {
       links: [
         { label: "Cuvr Rehab",    href: "https://rehab.cuvr.ae" },
-        { label: "Cuvr Reality",  href: "https://reality.cuvr.ae" },
+        { label: "Cuvr Realty",  href: "https://reality.cuvr.ae" },
         { label: "Technology",    href: "#technology" },
         { label: "About",         href: "#about" },
       ],
@@ -191,7 +191,7 @@ const translations = {
       links: {
         directory: [
           { num: "01", text: "Cuvr Rehab",    href: "https://rehab.cuvr.ae" },
-          { num: "02", text: "Cuvr Reality", href: "https://reality.cuvr.ae" },
+          { num: "02", text: "Cuvr Realty", href: "https://reality.cuvr.ae" },
           { num: "03", text: "Tech Stack",   href: "#technology" },
         ],
         node: [
