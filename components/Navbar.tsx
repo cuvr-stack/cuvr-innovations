@@ -68,6 +68,7 @@ export default function Navbar() {
           </button>
 
           <button
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="font-mono text-[11px] tracking-widest text-white px-5 py-2 transition-all duration-300 uppercase"
             style={{ background: "#a855f7" }}
             onMouseEnter={(e) => (e.currentTarget.style.background = "#9333ea")}
@@ -124,7 +125,11 @@ export default function Navbar() {
                 >
                   {lang === "en" ? "عربي" : "EN"}
                 </button>
-                <button className="flex-1 font-mono text-[11px] tracking-widest text-white px-5 py-2.5 uppercase" style={{ background: "#a855f7" }}>
+                <button
+                  onClick={() => { setOpen(false); setTimeout(() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }), 320); }}
+                  className="flex-1 font-mono text-[11px] tracking-widest text-white px-5 py-2.5 uppercase"
+                  style={{ background: "#a855f7" }}
+                >
                   {t.nav.cta}
                 </button>
               </div>

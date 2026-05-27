@@ -10,7 +10,7 @@ export default function EstablishLink() {
   const c = t.contact;
 
   return (
-    <section className="relative bg-[#080808] overflow-hidden py-20">
+    <section id="contact" className="relative bg-[#080808] overflow-hidden py-20">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

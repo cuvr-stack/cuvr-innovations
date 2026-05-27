@@ -88,7 +88,9 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.52 }}
           className="flex flex-wrap items-center gap-3"
         >
-          <button className="group relative flex items-center gap-2.5 font-mono text-xs font-bold tracking-widest text-[#080808] bg-[#00ff6a] hover:bg-[#00dd5a] px-6 py-3 uppercase transition-colors duration-300 shadow-green-sm overflow-hidden">
+          <button
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            className="group relative flex items-center gap-2.5 font-mono text-xs font-bold tracking-widest text-[#080808] bg-[#00ff6a] hover:bg-[#00dd5a] px-6 py-3 uppercase transition-colors duration-300 shadow-green-sm overflow-hidden">
             <span className="relative z-10">{h.btn1}</span>
             <ArrowRight size={13} className="relative z-10 group-hover:translate-x-1 transition-transform" />
             <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12" />
