@@ -57,7 +57,7 @@ export default function HomePage() {
         </section>
 
         {/* Vision & Mission */}
-        <section aria-label="CUVR Vision and Mission">
+        <section aria-label="CUVR Vision and Mission" id="vision">
           <VisionMission />
         </section>
 
