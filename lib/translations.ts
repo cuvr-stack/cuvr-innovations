@@ -17,7 +17,7 @@ const translations = {
       line1:  "RECODE",
       line2:  "REALITY.",
       desc:   "Architecting the next epoch of human experience. CUVR leverages neural-link precision and spatial compute to dissolve the barrier between biological and digital realms.",
-      btn1:   "Access Interface",
+      btn1:   "Request a Demo",
       btn2:   "System Log",
     },
 
@@ -163,6 +163,33 @@ const translations = {
       ],
     },
 
+    impact: {
+      badge:        "SYSTEM_IMPACT",
+      titleMain:    "Results That ",
+      titleHighlight: "Matter",
+      subtitle:     "Enterprise clients buy solutions, not aesthetics. Here is what CUVR delivers in the real world.",
+      rehab: {
+        tag:   "CUVR REHAB",
+        title: "Healthcare Outcomes",
+        stats: [
+          { value: "40%",  label: "Increase in patient engagement vs. traditional therapy" },
+          { value: "30%",  label: "Fewer rehabilitation sessions needed on average" },
+          { value: "100%", label: "Remote clinician oversight — monitor patients in real time" },
+          { value: "0",    label: "Additional equipment cost after initial setup" },
+        ],
+      },
+      realty: {
+        tag:   "CUVR REALTY",
+        title: "Real Estate Outcomes",
+        stats: [
+          { value: "70%",  label: "Reduction in physical property staging costs" },
+          { value: "3×",   label: "Faster sales cycle for off-plan properties" },
+          { value: "100%", label: "Remote — buyers tour and decide from anywhere in the world" },
+          { value: "∞",    label: "Properties shown simultaneously with no scheduling limit" },
+        ],
+      },
+    },
+
     visionMission: {
       badge: "DIRECTIVE_CORE",
       vision: {
@@ -242,7 +269,7 @@ const translations = {
       line1:  "أعِد",
       line2:  "البرمجة.",
       desc:   "نؤسّس الحقبة القادمة من التجربة البشرية. تستخدم CUVR دقة الربط العصبي والحوسبة المكانية لإذابة الحدود بين العوالم البيولوجية والرقمية.",
-      btn1:   "الوصول إلى الواجهة",
+      btn1:   "احجز عرضاً تجريبياً",
       btn2:   "سجل النظام",
     },
 
@@ -386,6 +413,33 @@ const translations = {
           desc:  "هندسة الحضور في السوق والشراكات الاستراتيجية التي تضع ابتكارات CUVR في طليعة المشهد العالمي للواقع الافتراضي.",
         },
       ],
+    },
+
+    impact: {
+      badge:        "تأثير_المنظومة",
+      titleMain:    "نتائج ",
+      titleHighlight: "حقيقية",
+      subtitle:     "العملاء المؤسسيون يشترون الحلول، لا الجماليات. إليك ما تحققه CUVR في الواقع الفعلي.",
+      rehab: {
+        tag:   "كيوفر ريهاب",
+        title: "مخرجات الرعاية الصحية",
+        stats: [
+          { value: "40%",  label: "زيادة في تفاعل المرضى مقارنةً بالعلاج التقليدي" },
+          { value: "30%",  label: "تقليل في متوسط جلسات التأهيل المطلوبة" },
+          { value: "100%", label: "إشراف طبي عن بُعد — متابعة المرضى في الوقت الفعلي" },
+          { value: "0",    label: "تكاليف معدات إضافية بعد الإعداد الأولي" },
+        ],
+      },
+      realty: {
+        tag:   "كيوفر ريالتي",
+        title: "مخرجات القطاع العقاري",
+        stats: [
+          { value: "70%",  label: "تخفيض في تكاليف التجهيز المادي للعقارات" },
+          { value: "3×",   label: "أسرع في دورة المبيعات للعقارات على الخارطة" },
+          { value: "100%", label: "عن بُعد — يجول المشترون ويتخذون قراراتهم من أي مكان" },
+          { value: "∞",    label: "عقارات تُعرض في آنٍ واحد بلا حدود جدولة" },
+        ],
+      },
     },
 
     visionMission: {

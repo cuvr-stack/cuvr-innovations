@@ -90,14 +90,14 @@ export default function HeroSection() {
         >
           <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="group relative flex items-center gap-2.5 font-mono text-xs font-bold tracking-widest text-[#080808] bg-[#00ff6a] hover:bg-[#00dd5a] px-6 py-3 uppercase transition-colors duration-300 shadow-green-sm overflow-hidden">
+            className="group relative flex items-center gap-3 font-mono text-sm font-bold tracking-widest text-[#080808] bg-[#00ff6a] hover:bg-[#00dd5a] px-8 py-4 uppercase transition-colors duration-300 shadow-green-sm overflow-hidden">
             <span className="relative z-10">{h.btn1}</span>
-            <ArrowRight size={13} className="relative z-10 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight size={15} className="relative z-10 group-hover:translate-x-1 transition-transform" />
             <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12" />
           </button>
 
           <button
-            className="flex items-center gap-2.5 font-mono text-xs tracking-widest px-6 py-3 uppercase transition-all duration-300"
+            className="flex items-center gap-2.5 font-mono text-xs tracking-widest px-6 py-4 uppercase transition-all duration-300"
             style={{ color: "#a855f7", border: "1px solid #a855f7" }}
             onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(168,85,247,0.08)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}

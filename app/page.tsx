@@ -5,7 +5,10 @@ import HowItWorks from "@/components/HowItWorks";
 import AISubstrate from "@/components/AISubstrate";
 import OurStory from "@/components/OurStory";
 import VisionMission from "@/components/VisionMission";
+import SystemImpact from "@/components/SystemImpact";
+import DemoSection from "@/components/DemoSection";
 import WhyWorkAtCuvr from "@/components/WhyWorkAtCuvr";
+import FloatingCTA from "@/components/FloatingCTA";
 import ArchitectsSection from "@/components/ArchitectsSection";
 import EstablishLink from "@/components/EstablishLink";
 import Footer from "@/components/Footer";
@@ -48,6 +51,16 @@ export default function HomePage() {
           <VisionMission />
         </section>
 
+        {/* System Impact — results */}
+        <section aria-label="CUVR System Impact and Results">
+          <SystemImpact />
+        </section>
+
+        {/* Demo Videos */}
+        <section aria-label="CUVR Product Demo Videos">
+          <DemoSection />
+        </section>
+
         {/* Careers */}
         <section aria-label="Careers at CUVR Innovation">
           <WhyWorkAtCuvr />
@@ -64,6 +77,7 @@ export default function HomePage() {
         </section>
 
         <Footer />
+        <FloatingCTA />
       </main>
     </>
   );
