@@ -163,6 +163,22 @@ const translations = {
       ],
     },
 
+    visionMission: {
+      badge: "DIRECTIVE_CORE",
+      vision: {
+        tag:   "VISION",
+        title: "Where We Are Going",
+        desc:  "To become the world's leading AI-powered VR company — redefining how humans experience healthcare and real estate. We believe immersive technology should not be a novelty; it should be infrastructure that drives real-world outcomes.",
+        stat:  { value: "2030", label: "Global Deployment Target" },
+      },
+      mission: {
+        tag:   "MISSION",
+        title: "What We Do Today",
+        desc:  "We build AI-driven VR platforms that solve specific, measurable problems. For healthcare providers, we accelerate patient recovery. For real estate developers, we close deals faster. Every product we ship reduces cost, increases efficiency, and improves human experience.",
+        stat:  { value: "2", label: "Industries. One Platform." },
+      },
+    },
+
     contact: {
       badge:        "INITIALIZE_CONN",
       titleMain:    "Establish",
@@ -370,6 +386,22 @@ const translations = {
           desc:  "هندسة الحضور في السوق والشراكات الاستراتيجية التي تضع ابتكارات CUVR في طليعة المشهد العالمي للواقع الافتراضي.",
         },
       ],
+    },
+
+    visionMission: {
+      badge: "المحور_الأساسي",
+      vision: {
+        tag:   "الرؤية",
+        title: "إلى أين نتجه",
+        desc:  "أن نصبح الشركة الرائدة عالمياً في مجال الواقع الافتراضي المدعوم بالذكاء الاصطناعي — نُعيد تعريف كيفية تجربة البشر للرعاية الصحية والعقارات. نؤمن بأن التقنية الغامرة لا ينبغي أن تكون مجرد ترفيه؛ بل يجب أن تكون بنية تحتية تُحقق نتائج حقيقية.",
+        stat:  { value: "2030", label: "هدف الانتشار العالمي" },
+      },
+      mission: {
+        tag:   "المهمة",
+        title: "ما نفعله اليوم",
+        desc:  "نبني منصات واقع افتراضي مدعومة بالذكاء الاصطناعي تحل مشكلات محددة وقابلة للقياس. لمزودي الرعاية الصحية، نُسرّع تعافي المرضى. للمطورين العقاريين، نُغلق الصفقات بشكل أسرع. كل منتج نُطلقه يخفض التكاليف ويرفع الكفاءة ويحسّن تجربة الإنسان.",
+        stat:  { value: "2", label: "قطاعان. منصة واحدة." },
+      },
     },
 
     contact: {

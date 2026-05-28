@@ -4,6 +4,7 @@ import ImmersiveDomains from "@/components/ImmersiveDomains";
 import HowItWorks from "@/components/HowItWorks";
 import AISubstrate from "@/components/AISubstrate";
 import OurStory from "@/components/OurStory";
+import VisionMission from "@/components/VisionMission";
 import WhyWorkAtCuvr from "@/components/WhyWorkAtCuvr";
 import ArchitectsSection from "@/components/ArchitectsSection";
 import EstablishLink from "@/components/EstablishLink";
@@ -40,6 +41,11 @@ export default function HomePage() {
         {/* About / Story */}
         <section aria-label="About CUVR Innovation Labs" id="about">
           <OurStory />
+        </section>
+
+        {/* Vision & Mission */}
+        <section aria-label="CUVR Vision and Mission">
+          <VisionMission />
         </section>
 
         {/* Careers */}
