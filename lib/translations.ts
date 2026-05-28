@@ -9,7 +9,7 @@ const translations = {
         { label: "Technology",    href: "#technology" },
         { label: "About",         href: "#about" },
       ],
-      cta: "CONNECT_US",
+      cta: "Connect Us",
     },
 
     hero: {
@@ -217,7 +217,7 @@ const translations = {
       field2Placeholder: "entity@domain.io",
       field3Label:  "POLICY_PLEDGE",
       field3Placeholder: "intent_descriptor",
-      submit:       "ESTABLISH_LINK",
+      submit:       "Connect Us",
       emailLabel:   "Email",
       phoneLabel:   "Phone",
       officeLabel:  "Office",
@@ -261,7 +261,7 @@ const translations = {
         { label: "التقنية",         href: "#technology" },
         { label: "من نحن",          href: "#about" },
       ],
-      cta: "تواصل_معنا",
+      cta: "تواصل معنا",
     },
 
     hero: {
@@ -469,7 +469,7 @@ const translations = {
       field2Placeholder: "entity@domain.io",
       field3Label:       "تعهد_السياسة",
       field3Placeholder: "واصف_النية",
-      submit:            "إنشاء_الرابط",
+      submit:            "تواصل معنا",
       emailLabel:        "البريد الإلكتروني",
       phoneLabel:        "الهاتف",
       officeLabel:       "المكتب",
