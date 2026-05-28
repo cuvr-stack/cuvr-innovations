@@ -46,11 +46,6 @@ export default function HomePage() {
           <OurStory />
         </section>
 
-        {/* Vision & Mission */}
-        <section aria-label="CUVR Vision and Mission">
-          <VisionMission />
-        </section>
-
         {/* System Impact — results */}
         <section aria-label="CUVR System Impact and Results">
           <SystemImpact />
@@ -59,6 +54,11 @@ export default function HomePage() {
         {/* Demo Videos */}
         <section aria-label="CUVR Product Demo Videos">
           <DemoSection />
+        </section>
+
+        {/* Vision & Mission */}
+        <section aria-label="CUVR Vision and Mission">
+          <VisionMission />
         </section>
 
         {/* Careers */}
