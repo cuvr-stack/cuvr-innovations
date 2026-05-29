@@ -61,7 +61,7 @@ const translations = {
         ],
       },
       reality: {
-        tag:      "CUVR_REALITY",
+        tag:      "CUVR_REALTY",
         title:    "CUVR Realty",
         subtitle: "How Property Tours Work",
         steps: [
@@ -315,7 +315,7 @@ const translations = {
         ],
       },
       reality: {
-        tag:      "CUVR_REALITY",
+        tag:      "CUVR_REALTY",
         title:    "كيوفر ريالتي",
         subtitle: "كيف تعمل جولات العقارات",
         steps: [
